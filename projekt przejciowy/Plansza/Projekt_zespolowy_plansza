@@ -90,7 +90,7 @@
     <state world_name='default'>
       <sim_time>0 0</sim_time>
       <real_time>0 0</real_time>
-      <wall_time>1636904570 401024913</wall_time>
+      <wall_time>1636909186 603985449</wall_time>
       <iterations>0</iterations>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
@@ -103,43 +103,50 @@
         </link>
       </model>
       <model name='lidar_plaski_turtle_waffle'>
-        <pose>0.041189 0.002008 0.010007 -1e-06 -0.005686 0.003457</pose>
+        <pose>0.040728 0.00191 0.010007 0 -0.005687 0.002087</pose>
         <scale>1 1 1</scale>
         <link name='base'>
-          <pose>0.041189 0.002008 0.010007 -1e-06 -0.005686 0.003457</pose>
-          <velocity>4.4e-05 1e-05 0.005676 -0.00181 0.001814 -0.000137</velocity>
-          <acceleration>0.101002 0.169839 11.5957 -0.174066 -0.401387 2.51664</acceleration>
-          <wrench>0.101002 0.169839 11.5957 0 -0 0</wrench>
+          <pose>0.040728 0.00191 0.010007 0 -0.005687 0.002087</pose>
+          <velocity>3.4e-05 5.7e-05 0.006792 8e-06 0.00331 0.00022</velocity>
+          <acceleration>0.235383 0.053895 13.9997 -0.362963 0.333051 -0.221124</acceleration>
+          <wrench>0.235383 0.053895 13.9997 0 -0 0</wrench>
         </link>
         <link name='image'>
-          <pose>0.04119 0.002009 0.010007 0 -0.005691 0.003458</pose>
-          <velocity>0.000121 5.4e-05 0.005751 -0.001405 0.000702 9.3e-05</velocity>
-          <acceleration>0.227005 0.345998 11.6103 -2.8479 1.41192 -0.272488</acceleration>
-          <wrench>0.007945 0.01211 0.40636 0 -0 0</wrench>
+          <pose>0.040729 0.00191 0.010007 -0 -0.005692 0.002088</pose>
+          <velocity>0.000105 4.9e-05 0.00686 -0.000193 0.00231 0.000208</velocity>
+          <acceleration>0.538943 0.083534 14.0303 2.80887 -1.45444 3.06071</acceleration>
+          <wrench>0.018863 0.002924 0.491061 0 -0 0</wrench>
         </link>
         <link name='left_wheel'>
-          <pose>0.042718 0.002022 0.010016 -6.1e-05 -0.005699 0.014072</pose>
-          <velocity>-0.000407 9e-06 0.005779 -0.001475 0.000881 -0.003089</velocity>
-          <acceleration>0.053015 0.022182 11.1359 0.080947 1.51773 -2.9863</acceleration>
-          <wrench>0.005301 0.002218 1.11359 0 -0 0</wrench>
+          <pose>0.041672 0.001915 0.010013 -3.8e-05 -0.005697 0.008641</pose>
+          <velocity>-0.000616 -2e-06 0.006885 -0.000305 0.002253 -0.00473</velocity>
+          <acceleration>0.136524 -0.02579 13.6897 2.55874 -1.43158 -1.84133</acceleration>
+          <wrench>0.013652 -0.002579 1.36897 0 -0 0</wrench>
         </link>
         <link name='lidar'>
-          <pose>0.04119 0.002009 0.010007 -1e-06 -0.005691 0.003458</pose>
-          <velocity>0.000116 4.1e-05 0.005742 -0.001669 0.0008 0.000126</velocity>
-          <acceleration>0.244791 0.387745 11.5801 3.03886 1.49858 -0.204803</acceleration>
-          <wrench>0.030599 0.048468 1.44751 0 -0 0</wrench>
+          <pose>0.040729 0.00191 0.010007 -1e-06 -0.005692 0.002088</pose>
+          <velocity>0.000107 5.7e-05 0.006858 -0.00029 0.002297 0.000323</velocity>
+          <acceleration>0.576375 0.110159 13.9469 2.5386 -1.48142 -3.02615</acceleration>
+          <wrench>0.072047 0.01377 1.74337 0 -0 0</wrench>
         </link>
         <link name='right_wheel'>
-          <pose>0.039615 0.001994 0.009998 -6.4e-05 -0.0057 0.014397</pose>
-          <velocity>0.002947 5.8e-05 0.005733 -0.001701 0.000729 -0.019228</velocity>
-          <acceleration>0.16632 0.035313 11.9512 2.77038 1.25016 0.011832</acceleration>
-          <wrench>0.016632 0.003531 1.19512 0 -0 0</wrench>
+          <pose>0.039525 0.001902 0.01 -4.9e-05 -0.005699 0.010451</pose>
+          <velocity>0.002941 3.3e-05 0.006842 -0.000329 0.002148 -0.019095</velocity>
+          <acceleration>0.261035 -0.017996 13.767 2.27388 -1.15666 -3.07389</acceleration>
+          <wrench>0.026104 -0.0018 1.3767 0 -0 0</wrench>
         </link>
       </model>
       <light name='sun'>
         <pose>0 0 10 0 -0 0</pose>
       </light>
     </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>0.733399 -0.546495 0.324817 0 0.275643 2.35619</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
     <model name='lidar_plaski_turtle_waffle'>
       <link name='base'>
         <inertial>
@@ -830,14 +837,7 @@
       </joint>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>0.039889 0.001698 0 0 -0 0</pose>
+      <pose>0.044756 0.004204 0 0 -0 0</pose>
     </model>
-    <gui fullscreen='0'>
-      <camera name='user_camera'>
-        <pose>0.651984 -0.646687 0.277873 0 0.275643 2.35619</pose>
-        <view_controller>orbit</view_controller>
-        <projection_type>perspective</projection_type>
-      </camera>
-    </gui>
   </world>
 </sdf>
