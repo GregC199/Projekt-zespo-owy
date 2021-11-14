@@ -88,10 +88,10 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>0 0</sim_time>
-      <real_time>0 0</real_time>
-      <wall_time>1636909186 603985449</wall_time>
-      <iterations>0</iterations>
+      <sim_time>108 396000000</sim_time>
+      <real_time>112 969974873</real_time>
+      <wall_time>1636918625 647212520</wall_time>
+      <iterations>108396</iterations>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -102,52 +102,45 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='lidar_plaski_turtle_waffle'>
-        <pose>0.040728 0.00191 0.010007 0 -0.005687 0.002087</pose>
+      <model name='robot_lidar_plaski'>
+        <pose>0.108985 -0.020217 0.010006 -1e-06 -0.005683 0.009793</pose>
         <scale>1 1 1</scale>
         <link name='base'>
-          <pose>0.040728 0.00191 0.010007 0 -0.005687 0.002087</pose>
-          <velocity>3.4e-05 5.7e-05 0.006792 8e-06 0.00331 0.00022</velocity>
-          <acceleration>0.235383 0.053895 13.9997 -0.362963 0.333051 -0.221124</acceleration>
-          <wrench>0.235383 0.053895 13.9997 0 -0 0</wrench>
+          <pose>0.108985 -0.020217 0.010006 -1e-06 -0.005683 0.009793</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='image'>
-          <pose>0.040729 0.00191 0.010007 -0 -0.005692 0.002088</pose>
-          <velocity>0.000105 4.9e-05 0.00686 -0.000193 0.00231 0.000208</velocity>
-          <acceleration>0.538943 0.083534 14.0303 2.80887 -1.45444 3.06071</acceleration>
-          <wrench>0.018863 0.002924 0.491061 0 -0 0</wrench>
+          <pose>0.108985 -0.020217 0.010006 -1e-06 -0.005683 0.009793</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='left_wheel'>
-          <pose>0.041672 0.001915 0.010013 -3.8e-05 -0.005697 0.008641</pose>
-          <velocity>-0.000616 -2e-06 0.006885 -0.000305 0.002253 -0.00473</velocity>
-          <acceleration>0.136524 -0.02579 13.6897 2.55874 -1.43158 -1.84133</acceleration>
-          <wrench>0.013652 -0.002579 1.36897 0 -0 0</wrench>
+          <pose>0.108985 -0.020217 0.010006 -1e-06 -0.005683 0.009793</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='lidar'>
-          <pose>0.040729 0.00191 0.010007 -1e-06 -0.005692 0.002088</pose>
-          <velocity>0.000107 5.7e-05 0.006858 -0.00029 0.002297 0.000323</velocity>
-          <acceleration>0.576375 0.110159 13.9469 2.5386 -1.48142 -3.02615</acceleration>
-          <wrench>0.072047 0.01377 1.74337 0 -0 0</wrench>
+          <pose>0.108985 -0.020217 0.010006 -1e-06 -0.005683 0.009793</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='right_wheel'>
-          <pose>0.039525 0.001902 0.01 -4.9e-05 -0.005699 0.010451</pose>
-          <velocity>0.002941 3.3e-05 0.006842 -0.000329 0.002148 -0.019095</velocity>
-          <acceleration>0.261035 -0.017996 13.767 2.27388 -1.15666 -3.07389</acceleration>
-          <wrench>0.026104 -0.0018 1.3767 0 -0 0</wrench>
+          <pose>0.108985 -0.020217 0.010006 -1e-06 -0.005683 0.009793</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <light name='sun'>
         <pose>0 0 10 0 -0 0</pose>
       </light>
     </state>
-    <gui fullscreen='0'>
-      <camera name='user_camera'>
-        <pose>0.733399 -0.546495 0.324817 0 0.275643 2.35619</pose>
-        <view_controller>orbit</view_controller>
-        <projection_type>perspective</projection_type>
-      </camera>
-    </gui>
-    <model name='lidar_plaski_turtle_waffle'>
+    <model name='robot_lidar_plaski'>
       <link name='base'>
         <inertial>
           <pose>-0.064 0 0.048 0 -0 0</pose>
@@ -166,36 +159,89 @@
         <kinematic>0</kinematic>
         <pose>0 0 0 0 -0 0</pose>
         <gravity>1</gravity>
-        <visual name='base_visual'>
-          <pose>-0.064 0 0 0 -0 0</pose>
+        <visual name='ModelPreview_8::base::visual_1'>
+          <pose>-0.177 0.064 -0.004 0 -0 0</pose>
           <geometry>
-            <mesh>
-              <uri>model://turtlebot3_waffle_pi/meshes/waffle_pi_base.dae</uri>
-              <scale>0.001 0.001 0.001</scale>
-            </mesh>
+            <sphere>
+              <radius>0.00499999</radius>
+            </sphere>
           </geometry>
           <material>
             <shader type='pixel'>
               <normal_map>__default__</normal_map>
             </shader>
+            <script>
+              <name>ModelPreview_5::base::base_visual_MATERIAL_</name>
+              <uri>__default__</uri>
+            </script>
+            <ambient>0.353 0.478 0.776 1</ambient>
+            <diffuse>0.353 0.478 0.776 1</diffuse>
+            <specular>0.353 0.478 0.776 1</specular>
+            <emissive>0.353 0.478 0.776 1</emissive>
           </material>
           <transparency>0</transparency>
           <cast_shadows>1</cast_shadows>
         </visual>
-        <collision name='right_caster_collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
+        <visual name='base_visual'>
+          <pose>-0.064 0 0.048 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.265 0.265 0.089</size>
+            </box>
+          </geometry>
+          <material>
+            <shader type='pixel'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <script>
+              <name>ModelPreview_5::base::base_visual_MATERIAL_</name>
+              <uri>__default__</uri>
+            </script>
+            <ambient>0.353 0.478 0.776 1</ambient>
+            <diffuse>0.353 0.478 0.776 1</diffuse>
+            <specular>0.353 0.478 0.776 1</specular>
+            <emissive>0.353 0.478 0.776 1</emissive>
+          </material>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <visual name='ModelPreview_8::base::visual_2'>
           <pose>-0.177 -0.064 -0.004 0 -0 0</pose>
           <geometry>
             <sphere>
-              <radius>0.005</radius>
+              <radius>0.00499999</radius>
             </sphere>
+          </geometry>
+          <material>
+            <shader type='pixel'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <script>
+              <name>ModelPreview_5::base::base_visual_MATERIAL_</name>
+              <uri>__default__</uri>
+            </script>
+            <ambient>0.353 0.478 0.776 1</ambient>
+            <diffuse>0.353 0.478 0.776 1</diffuse>
+            <specular>0.353 0.478 0.776 1</specular>
+            <emissive>0.353 0.478 0.776 1</emissive>
+          </material>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='base_collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>-0.064 0 0.048 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.265 0.265 0.089</size>
+            </box>
           </geometry>
           <surface>
             <friction>
               <ode>
-                <mu>100000</mu>
-                <mu2>100000</mu2>
+                <mu>1</mu>
+                <mu2>1</mu2>
                 <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
@@ -237,20 +283,20 @@
             </contact>
           </surface>
         </collision>
-        <collision name='base_collision'>
+        <collision name='right_caster_collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose>-0.064 0 0.048 0 -0 0</pose>
+          <pose>-0.177 -0.064 -0.004 0 -0 0</pose>
           <geometry>
-            <box>
-              <size>0.265 0.265 0.089</size>
-            </box>
+            <sphere>
+              <radius>0.005</radius>
+            </sphere>
           </geometry>
           <surface>
             <friction>
               <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
+                <mu>100000</mu>
+                <mu2>100000</mu2>
                 <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
@@ -459,16 +505,27 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
         <pose>0 0 0 0 -0 0</pose>
+        <gravity>1</gravity>
         <visual name='left_wheel_visual'>
           <pose>0 0.144 0.023 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://turtlebot3_waffle_pi/meshes/left_tire.dae</uri>
+              <uri>/home/greg/git/Projekt-zespo-owy/projekt przejciowy/Model_robota/opony/left_tire.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
           <material>
-            <shader type='pixel'/>
+            <shader type='pixel'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <script>
+              <name>ModelPreview_1::left_wheel::left_wheel_visual_MATERIAL_ModelPreview_1::left_wheel::left_wheel_visual_MATERIAL_ModelPreview_1::left_wheel::left_wheel_visual_MATERIAL_ModelPreview_7::left_wheel::left_wheel_visual_MATERIAL_ModelPreview_5::left_wheel::left_wheel_visual_MATERIAL_</name>
+              <uri>__default__</uri>
+            </script>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0 0 0 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
           </material>
           <transparency>0</transparency>
           <cast_shadows>1</cast_shadows>
@@ -578,16 +635,27 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
         <pose>0 0 0 0 -0 0</pose>
+        <gravity>1</gravity>
         <visual name='lidar_sensor_visual'>
-          <pose>-0.064 0 0.121 0 -0 0</pose>
+          <pose>-0.052 0 0.111 0 -0 0</pose>
           <geometry>
-            <mesh>
-              <uri>model://turtlebot3_waffle_pi/meshes/lds.dae</uri>
-              <scale>0.001 0.001 0.001</scale>
-            </mesh>
+            <cylinder>
+              <radius>0.0508</radius>
+              <length>0.055</length>
+            </cylinder>
           </geometry>
           <material>
-            <shader type='pixel'/>
+            <shader type='pixel'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <script>
+              <name>ModelPreview_5::lidar::lidar_sensor_visual_MATERIAL_</name>
+              <uri>__default__</uri>
+            </script>
+            <ambient>0 0.667 0 1</ambient>
+            <diffuse>0 0.667 0 1</diffuse>
+            <specular>0.078 0.529 0.318 1</specular>
+            <emissive>0 1 0.498 1</emissive>
           </material>
           <transparency>0</transparency>
           <cast_shadows>1</cast_shadows>
@@ -666,16 +734,27 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
         <pose>0 0 0 0 -0 0</pose>
+        <gravity>1</gravity>
         <visual name='right_wheel_visual'>
           <pose>0 -0.144 0.023 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://turtlebot3_waffle_pi/meshes/right_tire.dae</uri>
+              <uri>/home/greg/git/Projekt-zespo-owy/projekt przejciowy/Model_robota/opony/right_tire.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
           <material>
-            <shader type='pixel'/>
+            <shader type='pixel'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <script>
+              <name>ModelPreview_1::right_wheel::right_wheel_visual_MATERIAL_ModelPreview_1::right_wheel::right_wheel_visual_MATERIAL_ModelPreview_1::right_wheel::right_wheel_visual_MATERIAL_ModelPreview_7::right_wheel::right_wheel_visual_MATERIAL_ModelPreview_5::right_wheel::right_wheel_visual_MATERIAL_</name>
+              <uri>__default__</uri>
+            </script>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0 0 0 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
           </material>
           <transparency>0</transparency>
           <cast_shadows>1</cast_shadows>
@@ -837,7 +916,14 @@
       </joint>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>0.044756 0.004204 0 0 -0 0</pose>
+      <pose>0.108985 -0.020217 0.010006 -1e-06 -0.005683 0.009793</pose>
     </model>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>1.18243 -0.840909 0.356424 0 0.275643 2.35619</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
   </world>
 </sdf>
