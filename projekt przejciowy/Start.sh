@@ -1,2 +1,2 @@
 #!/bin/bash
-gazebo ./Plansza/Projekt_zespolowy_plansza
+sudo gazebo ./Plansza/Projekt_zespolowy_plansza
