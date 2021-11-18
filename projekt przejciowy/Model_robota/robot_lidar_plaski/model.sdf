@@ -370,7 +370,7 @@
         <pose>0 0.144 0.023 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/greg/git/Projekt-zespo-owy/projekt przejciowy/Model_robota/opony/left_tire.dae</uri>
+            <uri>../opony/left_tire.dae</uri>
             <scale>0.001 0.001 0.001</scale>
           </mesh>
         </geometry>
@@ -599,7 +599,7 @@
         <pose>0 -0.144 0.023 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/greg/git/Projekt-zespo-owy/projekt przejciowy/Model_robota/opony/right_tire.dae</uri>
+            <uri>../opony/right_tire.dae</uri>
             <scale>0.001 0.001 0.001</scale>
           </mesh>
         </geometry>
