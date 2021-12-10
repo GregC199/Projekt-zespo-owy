@@ -1,26 +1,40 @@
-import matplotlib
-import matplotlib.pyplot as plt
-import numpy as np
+#! /usr/bin/env python
 
-# Data for plotting
-t = np.arange(0.0, 2.0, 0.01)
-s = 1 + np.sin(2 * np.pi * t)
+from gazebo_msgs.srv import GetModelState
+import rospy
+############
+#ZAlążek do zczytywania pozycji modelu na mapie
+#############
+class Block:
+    def __init__(self, name, relative_entity_name):
+        self._name = name
+        self._relative_entity_name = relative_entity_name
 
-fig, ax = plt.subplots()
-ax.plot(t, s)
+class Tutorial:
 
-ax.set(xlabel='time (s)', ylabel='voltage (mV)',
-       title='About as simple as it gets, folks')
-ax.grid()
+    _blockListDict = {
+        'block_a': Block('mobile_base', 'wheel_left_link'),
+        'block_b': Block('brick_box_3x1x3', 'chassis'),
 
-fig.savefig("test.png")
-plt.show()
+    }
 
-a = "abc"
-b = "bcd"
+    def show_gazebo_models(self):
+        try:
+            model_coordinates = rospy.ServiceProxy('/gazebo/get_model_state', GetModelState)
+            for block in self._blockListDict.itervalues():
+                blockName = str(block._name)
+                resp_coordinates = model_coordinates(blockName, block._relative_entity_name)
+                print('\n')
+                print ('Status.success = ', resp_coordinates.success)
+                print(blockName)
+                print("Cube " + str(block._name))
+                print("Valeur de X : " + str(resp_coordinates.pose.position.x))
+                print("Quaternion X : " + str(resp_coordinates.pose.orientation.x))
 
-try:
-    print(a/b)
-except:
-    print()
-print(a+b)
+        except rospy.ServiceException as e:
+            rospy.loginfo("Get Model State service call failed:  {0}".format(e))
+
+
+if __name__ == '__main__':
+    tuto = Tutorial()
+    tuto.show_gazebo_models()
