@@ -6,6 +6,7 @@
         <path>/${PROJECT_DIR_NAME}</path>
         <path>/${PROJECT_DIR_NAME}/Sterowanie</path>
         <path>/${PROJECT_DIR_NAME}/UIApp</path>
+        <path>/${PROJECT_DIR_NAME}/Lidar_odczyt</path>
     </pydev_pathproperty>
             
     
